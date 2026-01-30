@@ -6,7 +6,7 @@ RN
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U main%b		Andrew_t4.adb		33ebfd93 NE OO SU IL
+U main%b		Andrew_t4.adb		036033d0 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -32,7 +32,7 @@ D a-tiinio.ads		20240521074738 e58fa6fb ada.text_io.integer_io%s
 D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20240521074738 15f799c2 interfaces%s
 D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
-D Andrew_t4.adb		20260130174806 998c1564 main%b
+D Andrew_t4.adb		20260130175218 a907db27 main%b
 D system.ads		20240521074738 426dafb8 system%s
 D s-assert.ads		20240521074738 9c4520c7 system.assertions%s
 D s-casuti.ads		20240521074738 cf13d755 system.case_util%s
@@ -70,18 +70,22 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[15|46] 19|2w10 4r9
 X 14 a-textio.ads
 58K13*Text_IO 787e16 19|1w10 3r9
-282U14*New_Line 19|29s13
-566U14*Put_Line 19|33s7
+282U14*New_Line 19|31s13
+519U14*Put 19|41s4 43s4
+566U14*Put_Line 19|35s7 40s4
 X 15 a-tiinio.ads
-83U14*Put 19|28s13[4|18]
+60U14*Get 19|42s4[4|18] 44s4[4|18]
+83U14*Put 19|30s13[4|18]
 X 19 Andrew_t4.adb
-6U11*main 6b11 39l5 39t9
-7V13 divisible_by_3{boolean} 7b13 8>7 17l8 17t22 26s23
-8i7 A{integer} 12r10
-18U14 list_divisible_by_3 18b14 19>7 20>7 34l8 34t27 38s4
-19i7 A{integer} 25r16
-20i7 B{integer} 25r21
-22b7 divisible{boolean} 26m10 27r13
-23i7 counter{integer} 30m13 30r24 33r65
-25i11 I{integer} 26r38 28r17
+6U11*main 6b11 46l5 46t9
+7i4 Value1{integer} 42m8 45r24
+8i4 Value2{integer} 44m8 45r32
+9V13 divisible_by_3{boolean} 9b13 10>7 19l8 19t22 28s23
+10i7 A{integer} 14r10
+20U14 list_divisible_by_3 20b14 21>7 22>7 36l8 36t27 45s4
+21i7 A{integer} 27r16
+22i7 B{integer} 27r21
+24b7 divisible{boolean} 28m10 29r13
+25i7 counter{integer} 32m13 32r24 35r65
+27i11 I{integer} 28r38 30r17
 

@@ -4,6 +4,8 @@ use Ada.Text_IO;
 use Ada.Integer_Text_IO;
 
 procedure main is
+   Value1 : Integer;
+   Value2 : Integer;
    function divisible_by_3(
       A : in Integer)
       return Boolean 
@@ -35,5 +37,10 @@ procedure main is
       
    
 begin
-   list_divisible_by_3(0, 100);
+   Put_Line("Enter the range to list numbers divisible by 3: ");
+   Put("Start value: ");
+   Get(Value1);
+   Put("End value: ");
+   Get(Value2);
+   list_divisible_by_3(Value1, Value2);
 end main;
