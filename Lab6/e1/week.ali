@@ -1,0 +1,20 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+
+U week%s		week.ads		f5cb684c NE OO PK
+
+D system.ads		20240521074738 426dafb8 system%s
+D week.ads		20260306164019 f5cb684c week%s
+G a e
+X 2 week.ads
+1K9*Week 11l5 11e9
+3a4*Mon{string}
+4a4*Tue{string}
+5a4*Wed{string}
+6a4*Thu{string}
+7a4*Fri{string}
+8a4*Sat{string}
+9a4*Sun{string}
+

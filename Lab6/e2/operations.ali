@@ -1,0 +1,24 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+
+U operations%b		operations.adb		d392a391 NE OO PK
+
+U operations%s		operations.ads		923700a8 EE NE OO PK
+
+D operations.ads	20260306165352 923700a8 operations%s
+D operations.adb	20260306165353 41a5a339 operations%b
+D system.ads		20240521074738 426dafb8 system%s
+G a e
+G c Z s b [increment_by operations 3 13 none]
+G c Z s b [get_increment_value operations 5 13 none]
+X 1 operations.ads
+1K9*Operations 6l5 6e15 2|1b14 18l5 18t15
+3V13*Increment_By{integer} 3>27 4>26 2|4b13 10l8 10t20
+3i27 I{integer} 2|4b27 9r14
+4i26 Incr{integer} 2|4b40 6r10 7r28
+5V13*Get_Increment_Value{integer} 2|12b13 15l8 15t27
+X 2 operations.adb
+3i4 Last_Increment{integer} 7m10 9r18 14r14
+

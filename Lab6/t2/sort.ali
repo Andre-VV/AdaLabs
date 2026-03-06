@@ -1,0 +1,52 @@
+V "GNAT Lib v13"
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U sort%b		sort.adb		d68709ff NE OO PK
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U sort%s		sort.ads		10db3252 EE NE OO PK
+
+D sort.ads		20260306181728 10db3252 sort%s
+D sort.adb		20260306182716 c65c3bad sort%b
+D system.ads		20240521074738 426dafb8 system%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+G a e
+G c Z s b [selection_sort sort 4 13 none]
+G c Z s b [insertion_sort sort 5 13 none]
+G c Z s b [bubble_sort sort 6 13 none]
+G c Z s s [arrIP sort 3 9 none]
+X 1 sort.ads
+1K9*Sort 9l5 9e9 2|1b14 63l5 63t9
+3A9*Arr(integer)<integer> 4r33 4r45 5r33 5r45 6r30 6r42 2|3r33 3r45 4r11
+. 22r33 22r45 23r11 40r30 40r42 41r11
+4V13*Selection_Sort{3A9} 4>29 2|3b13 20l8 20t22
+4a29 A{3A9} 2|3b29 4r16 4r28
+5V13*Insertion_Sort{3A9} 5>29 2|22b13 38l8 38t22
+5a29 A{3A9} 2|22b29 23r16 23r28
+6V13*Bubble_Sort{3A9} 6>26 2|40b13 60l8 60t19
+6a26 A{3A9} 2|40b26 41r16 41r28
+X 2 sort.adb
+4a7 B{1|3A9} 8r16 10r28 11r16 11r23 15r18 16m10 16r18 17m10 19r14
+5i7 min_idx{integer} 9m10 11r25 12m16 16r20 17r12
+6i7 temp{integer} 15m10 17r24
+8i11 I{integer} 9r21 10r19 15r20 16r12
+10i14 J{integer} 11r18 12r27
+23a7 B{1|3A9} 27r19 27r34 28r20 31r24 31r41 32m16 32r28 35m13 37r17
+24i7 key{integer} 28m13 31r48 35r25
+25i7 J{integer} 29m13 31r19 31r43 32r18 32r30 33m16 33r21 35r15
+27i14 I{integer} 28r22 29r18
+41a7 B{1|3A9} 47r19 47r30 49r22 49r33 50r19 50r26 51r27 52m19 52r27 53m19
+. 59r17
+42i7 I{integer}
+43i7 J{integer}
+44i7 temp{integer} 51m19 53r31
+45b7 swapped{boolean} 48m13 54m19 57r27
+47i14 I{integer} 49r42
+49i17 J{integer} 50r21 50r28 51r29 52r21 52r29 53r21
+

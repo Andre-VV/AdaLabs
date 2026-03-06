@@ -1,0 +1,30 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U minmax%b		minmax.adb		7a059c71 NE OO PK
+
+U minmax%s		minmax.ads		57bb0b74 EE NE OO PK
+
+D minmax.ads		20260306171438 57bb0b74 minmax%s
+D minmax.adb		20260306171846 2dbe9705 minmax%b
+D system.ads		20240521074738 426dafb8 system%s
+G a e
+G c Z s b [min minmax 3 13 none]
+G c Z s b [max minmax 4 13 none]
+G c Z s s [arrIP minmax 2 9 none]
+X 1 minmax.ads
+1K9*MinMax 6l5 6e11 2|1b14 27l5 27t11
+2A9*Arr(integer)<integer> 3r22 4r22 2|3r22 15r22
+3V13*Min{integer} 3>18 2|3b13 13l8 13t11
+3a18 A{2A9} 2|3b18 6r18 6r20 7r16 8r23 9r24
+4V13*Max{integer} 4>18 2|15b13 25l8 25t11
+4a18 A{2A9} 2|15b18 18r18 18r20 19r16 20r23 21r24
+X 2 minmax.adb
+4i7 Min_Val{integer} 6m7 8r13 9m13 12r14
+7i11 I{integer} 8r25 9r26
+16i7 Max_Val{integer} 18m7 20r13 21m13 24r14
+19i11 I{integer} 20r25 21r26
+
