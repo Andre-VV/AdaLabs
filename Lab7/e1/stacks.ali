@@ -1,0 +1,70 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_IO
+
+U stacks%b		stacks.adb		90a9914d NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U stacks%s		stacks.ads		88d9ecfb EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
+D a-string.ads		20240521074738 90ac6797 ada.strings%s
+D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
+D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
+D stacks.ads		20260313154952 88d9ecfb stacks%s
+D stacks.adb		20260313155337 445c1ce5 stacks%b
+D system.ads		20240521074738 426dafb8 system%s
+D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-putima.ads		20240521074738 17291fe4 system.put_images%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240521074738 df77073e system.soft_links%s
+D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
+G a e
+G c Z s b [push stacks 4 14 none]
+G c Z s b [pop stacks 5 14 none]
+G c Z s b [print_stack stacks 6 14 none]
+G c Z s s [Tcontent_typeBIP stacks 10 7 none]
+G c Z s s [stackIP stacks 11 12 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 787e16 14|1w10 1r27
+566U14*Put_Line 14|6s10 15s7 20s7
+X 13 stacks.ads
+1K9*stacks 9E15 16l5 16e11 14|2b14 24l5 24t11
+3R9*Stack 4r31 5r30 6r31 11c12 14e17 14|3r31 13r30 18r31
+4U14*Push 4=20 4>38 14|3b14 11l8 11t12
+4r20 S{3R9} 14|3b20 5r10 8m10 8r20 9m10 9r19
+4i38 Val{integer} 14|3b38 8r30
+5U14*Pop 5=19 5<37 14|13b14 16l8 16t11
+5r19 S{3R9} 14|13b19
+5i37 Val{integer} 14|13b37
+6U14*Print_Stack 6>27 14|18b14 21l8 21t19
+6r27 S{3R9} 14|18b27
+9I15 Stack_Index{natural} 10r35 12r16 14|5r18
+10A12 Content_Type(natural)<integer> 13r20
+12i10*Top{9I15} 14|5r12 8r22 9m12 9r21
+13a10*Content{10A12} 14|8m12
+
