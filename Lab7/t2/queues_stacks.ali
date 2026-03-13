@@ -1,0 +1,86 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+
+U queues_stacks%b	queues_stacks.adb	37a0cfb9 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W queues%s		queues.adb		queues.ali
+W stacks%s		stacks.adb		stacks.ali
+
+U queues_stacks%s	queues_stacks.ads	a279b5a9 EE NE OO PK IL
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W queues%s		queues.adb		queues.ali
+W stacks%s		stacks.adb		stacks.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
+D a-string.ads		20240521074738 90ac6797 ada.strings%s
+D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
+D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
+D queues.ads		20260313171450 3820a11a queues%s
+D queues_stacks.ads	20260313170748 279fe2bb queues_stacks%s
+D queues_stacks.adb	20260313171624 c9f51b43 queues_stacks%b
+D stacks.ads		20260313171537 bdc6f608 stacks%s
+D system.ads		20240521074738 426dafb8 system%s
+D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
+D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
+D s-putima.ads		20240521074738 17291fe4 system.put_images%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240521074738 df77073e system.soft_links%s
+D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
+G a e
+G c Z s b [reverse_queue queues_stacks 5 14 none]
+G r s stack [reverse_queue queues_stacks 5 14 none] [stackIP stacks 16 12 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [q_is_empty queues 12 13 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [get_first_element queues 7 13 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [push stacks 4 14 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [dequeue queues 5 14 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [s_is_empty stacks 11 13 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [get_top_element stacks 7 13 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [enqueue queues 4 14 none]
+G r c none [reverse_queue queues_stacks 5 14 none] [pop stacks 5 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|3r6 3r23
+X 9 a-textio.ads
+58K13*Text_IO 787e16 15|3w10 3r27
+X 13 queues.ads
+1K9*queues 24e11 14|1w6 1r18 15|1w6 1r18
+3R9*Queue 21e17 14|5r40 15|7r40
+4U14*Enqueue 15|18s10
+5U14*Dequeue 15|13s10
+7V13*get_first_element{integer} 15|12s18
+12V13*Q_is_empty{boolean} 15|11s17
+X 14 queues_stacks.ads
+3K9*queues_stacks 7l5 7e18 15|5b14 23l5 23t18
+5U14*reverse_queue 5=29 15|7b14 21l8 21t21
+5r29 Q{13|3R9} 15|7b29 11r28 12r36 13m18 18m18
+X 15 queues_stacks.adb
+8r7 S{16|3R9} 12m15 12r15 17r28 18r37 19m14 19r14
+X 16 stacks.ads
+1K9*stacks 14|2w6 2r18 15|2w6 2r18 16|21e11
+3R9*Stack 15|8r11 16|19e17
+4U14*Push 15|12s10
+5U14*Pop 15|19s10
+7V13*get_top_element{integer} 15|18s21
+11V13*S_is_empty{boolean} 15|17s17
+
