@@ -1,0 +1,27 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+
+U element%b		element.adb		51f1c00b NE OO PK GE
+
+U element%s		element.ads		1d6b601d BN EE NE OO PK GE
+
+D element.ads		20260402221028 1d6b601d element%s
+D element.adb		20260402221400 4c9aa016 element%b
+D system.ads		20240521074738 426dafb8 system%s
+G a e
+G c Z s b [element standard 3 9 none]
+X 1 element.ads
+2+9 T 4r22 6r24 10r12 2|2r22 13r24
+3k9*Element 2z9 10E4 12l5 12e12 2|1b14 26l5 26t12
+4U14*Set 4>18 2|2b14 6l8 6t11
+4*18 E{2+9} 2|2b18 4r16
+5U14*Reset 2|8b14 11l8 11t13
+6V13*Get{2+9} 2|13b13 19l8 19t11
+7V13*Is_Valid{boolean} 2|21b13 24l8 24t16
+8X4*Invalid_Element 2|16r16
+10*4 Value{2+9} 2|4m7 18r14
+11b4 Valid{boolean} 2|5m7 10m7 15r14 23r14
+
